@@ -3,54 +3,125 @@
   <head>
     <title>News Article</title>
     <style>
-      img {
-        width: 300px;
-        height: auto;
+      * {
+        font-family: sans-serif;
+        margin: 0px;
       }
-    </style>
-  </head>
-  <body style="font-family: sans-serif; background-color: rgb(238, 238, 238)">
-    <header
-      style="
+
+      body {
+        background-color: rgb(238, 238, 238);
+      }
+
+      header {
         width: 100%;
         height: 150px;
         text-align: center;
-        border-bottom: 2px double;
-      "
-    >
-      <h1
-        style="
-          font-family: serif;
-          font-size: 40px;
-          margin: 0px;
-          font-size: 50px;
-          padding: 12px;
-          text-transform: uppercase;
-        "
-      >
-        The Bold Days
-      </h1>
-      <p style="color: #4f4f4f; font-weight: 600px; margin: 0px">
-        Daily creative nuisance
-      </p>
+        border-bottom: 4px solid #4f4f4f;
+      }
+
+      header h1 {
+        font-family: serif;
+        font-size: 40px;
+        font-size: 50px;
+        padding: 12px;
+        text-transform: uppercase;
+      }
+
+      header nav a {
+        margin: 20px;
+        color: #626262;
+      }
+
+      main {
+        width: 800px;
+        height: auto;
+        text-align: justify;
+        margin: 0 auto 50px;
+      }
+
+      section {
+        padding: 10px;
+        height: 700px;
+        background-color: #fff;
+      }
+
+      article {
+        height: 100%;
+        padding: 15px;
+        width: 50%;
+        box-sizing: border-box;
+      }
+
+      .left-article {
+        float: left;
+      }
+
+      .right-article {
+        float: right;
+      }
+
+      section h2 {
+        padding: 15px;
+      }
+
+      article h3 {
+        padding-bottom: 20px;
+      }
+
+      article > figure > figcaption {
+        color: #444;
+        font-weight: lighter;
+      }
+
+      article > p {
+        padding: 5px 0px;
+        line-height: 20px;
+      }
+
+      article img,
+      article embed {
+        width: 100%;
+        height: auto;
+      }
+
+      footer {
+        width: 100%;
+        height: 200px;
+        background-color: #222;
+        text-align: center;
+        color: #ccc;
+      }
+
+      footer p {
+        padding: 10px;
+      }
+
+      footer nav a {
+        color: #ccc;
+        padding: 0px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>The Bold Days</h1>
+      <cite> Created by creater Date: 29/feb/2025 </cite>
       <nav style="font-weight: 700; margin-top: 15px">
-        <a href="#home" style="margin: 20px; color: #626262">Home</a>
-        <a href="#politics" style="margin: 20px; color: #626262">Politics</a>
-        <a href="#sports" style="margin: 20px; color: #626262">Sports</a>
-        <a href="#bussiness" style="margin: 20px; color: #626262">bussiness</a>
-        <a href="#movies" style="margin: 20px; color: #626262">Movies</a>
-        <a href="#contact" style="margin: 20px; color: #626262">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#politics">Politics</a>
+        <a href="#sports">Sports</a>
+        <a href="#bussiness">bussiness</a>
+        <a href="#movies">Movies</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <main style="width: 800px; text-align: justify; margin: auto">
-      <section id="politics" style="margin: 0px; padding: 20px; height: 600px">
+    <main>
+      <section id="politics">
         <h2>Politics</h2>
-        <article
-          style="padding: 15px; width: 50%; float: left; box-sizing: border-box"
-        >
-          <h3 style="text-align: center">BJP New government</h3>
-          <figure style="display: left">
+        <article class="left-article">
+          <h3>BJP New government</h3>
+          <figure>
             <img
               src="https://img.etimg.com/thumb/msid-118185612,width-300,height-225,imgsize-33530,resizemode-75/100-day-action-plan-for-viksit-delhi-as-bureaucrats-prepare-for-new-bjp-govt.jpg"
               alt="Narendre Modi"
@@ -69,15 +140,8 @@
           </p>
         </article>
 
-        <article
-          style="
-            padding: 15px;
-            width: 50%;
-            float: right;
-            box-sizing: border-box;
-          "
-        >
-          <h3 style="text-align: center">Nirmala Sitharaman Shows proof</h3>
+        <article class="right-article">
+          <h3>Nirmala Sitharaman Shows proof</h3>
           <figure>
             <img
               src="https://img.etimg.com/thumb/msid-118165478,width-203,height-124,imgsize-99654/sitharaman-on-same-page-with-raghuram-rajan-over-rupee-fall-debate.jpg"
@@ -102,12 +166,10 @@
         </article>
       </section>
 
-      <section id="sports" style="margin: 0px; padding: 20px; height: 600px">
+      <section id="sports">
         <h2>Sports</h2>
-        <article
-          style="padding: 15px; width: 50%; float: left; box-sizing: border-box"
-        >
-          <h3 style="text-align: center">National Sports Day</h3>
+        <article class="left-article">
+          <h3>National Sports Day</h3>
 
           <embed
             src="https://www.youtube.com/embed/XKn_fgeVuo4"
@@ -122,15 +184,8 @@
           </p>
         </article>
 
-        <article
-          style="
-            padding: 15px;
-            width: 50%;
-            float: right;
-            box-sizing: border-box;
-          "
-        >
-          <h3 style="text-align: center">Shubman Gill in action</h3>
+        <article class="right-article">
+          <h3>Shubman Gill in action</h3>
           <figure>
             <img
               src="https://th-i.thgim.com/public/incoming/gfjt4x/article69212295.ece/alternates/LANDSCAPE_1200/VIS_4006.JPG"
@@ -146,13 +201,11 @@
         </article>
       </section>
 
-      <section id="bussiness" style="margin: 0px; padding: 20px; height: 600px">
+      <section id="bussiness">
         <h2>Bussiness</h2>
 
-        <article
-          style="padding: 15px; width: 50%; float: left; box-sizing: border-box"
-        >
-          <h3 style="text-align: center">Adani Green withdraws</h3>
+        <article class="left-article">
+          <h3>Adani Green withdraws</h3>
 
           <figure>
             <img
@@ -177,15 +230,8 @@
           </p>
         </article>
 
-        <article
-          style="
-            padding: 15px;
-            width: 50%;
-            float: right;
-            box-sizing: border-box;
-          "
-        >
-          <h3 style="text-align: center">Nifty falls lower than 23,000</h3>
+        <article class="right-article">
+          <h3>Nifty falls lower than 23,000</h3>
 
           <figure>
             <img
@@ -204,13 +250,11 @@
         </article>
       </section>
 
-      <section id="movies" style="margin: 0px; padding: 20px; height: 600px">
+      <section id="movies">
         <h2>Movies</h2>
 
-        <article
-          style="padding: 15px; width: 50%; float: left; box-sizing: border-box"
-        >
-          <h3 style="text-align: center">Netflix unveils epic series</h3>
+        <article class="left-article">
+          <h3>Netflix unveils epic series</h3>
 
           <figure>
             <img
@@ -236,17 +280,8 @@
           </p>
         </article>
 
-        <article
-          style="
-            padding: 15px;
-            width: 50%;
-            float: right;
-            box-sizing: border-box;
-          "
-        >
-          <h3 style="text-align: center">
-            Vijay Deverakonda’s film gets a title
-          </h3>
+        <article class="right-article">
+          <h3>Vijay Deverakonda’s film gets a title</h3>
 
           <figure>
             <img
@@ -274,39 +309,14 @@
       </section>
     </main>
 
-    <aside>
-      <section style="margin: 0px; padding: 20px">
-        <h1>Advertisement and the links</h1>
-        <ul>
-          <li><a href="#">movies promotion</a></li>
-          <li><a href="#">product promotion</a></li>
-        </ul>
-        <h1>Other News and their links</h1>
-        <ul>
-          <li><a href="#">Yestarday News Paper</a></li>
-          <li><a href="#">Local news</a></li>
-        </ul>
-      </section>
-    </aside>
-
-    <footer
-      style="
-        width: 100%;
-        height: 200px;
-        background-color: #222;
-        padding: 20px;
-        text-align: center;
-      "
-    >
-      <p style="margin: 20px; color: #ccc; margin: 20px">
-        Copyright &copy; The Bold Days
-      </p>
+    <footer>
+      <p>Copyright &copy; The Bold Days</p>
+      <p>Reach Us</p>
       <nav id="contact">
-        <p style="margin: 20px; color: #ccc">Reach Us</p>
-        <a href="#" style="margin: 20px; color: #ccc">Linkden</a>
-        <a href="#" style="margin: 20px; color: #ccc">X-twitter</a>
-        <a href="#" style="margin: 20px; color: #ccc">Facebook</a>
-        <a href="#" style="margin: 20px; color: #ccc">Instagram</a>
+        <a href="#">Linkedin</a>
+        <a href="#">X-Twitter</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
       </nav>
     </footer>
   </body>
